@@ -15,10 +15,10 @@
       return prev;
     }, []);
     addedNodes.forEach(node => {
-      if (node.textContent && node.textContent.isArabic()) {
+      if (node.textContent && !node.hasAttribute('dir') && node.textContent.isArabic()) {
         node.setAttribute('dir', 'rtl');
       }
     })
   })
-  observer.observe(content, { childList: true }); 
+  observer.observe(content, { childList: true, subtree: true }); 
 })()
