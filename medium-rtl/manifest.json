@@ -1,6 +1,6 @@
 {
     "name": "Medium RTL",
-    "version": "0.1",
+    "version": "0.2",
 
     "description": "Medium wouldn't, so I did.",
 
@@ -8,7 +8,6 @@
         {
             "matches": ["*://medium.com/*"],
             "js": [
-              "js/jquery-2.2.3.min.js",
               "js/arabicString.js",
               "js/main.js"
             ],
