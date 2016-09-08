@@ -2,11 +2,11 @@
 
 function main () {
 
-  var content = $('.postArticle-content')
-
-  if (content.text().isArabic()) {
-    content.attr('dir', 'rtl')
-  }
+  document.querySelectorAll('.postArticle-content').forEach(function(el) {
+    if (el.innerText.isArabic()) {
+      el.setAttribute('dir', 'rtl')
+    }
+  });
 }
 
 main()

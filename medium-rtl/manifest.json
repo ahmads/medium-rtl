@@ -8,7 +8,6 @@
         {
             "matches": ["*://medium.com/*"],
             "js": [
-              "js/jquery-2.2.3.min.js",
               "js/arabicString.js",
               "js/main.js"
             ],
